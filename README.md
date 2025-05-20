@@ -129,6 +129,9 @@ export default function InterviewScreen() {
 
 ---
 
+## 7. Contributions
+  https://github.com/apium-io/whisper-client#
+---
 ## License
 
 MIT © 2025 Apium Innovations
