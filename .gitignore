@@ -1,0 +1,77 @@
+# ─────────────────────────────
+#  Core
+# ─────────────────────────────
+node_modules/
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+.pnpm-debug.log*
+*.log
+
+# Turborepo / pnpm store
+.turbo/
+.pnpm-store/
+
+# TypeScript
+*.tsbuildinfo
+
+# dotenv & local secrets
+.env*
+!.env.example
+
+# macOS / Windows cruft
+.DS_Store
+Thumbs.db
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.sw?
+*.code-workspace
+
+# iOS / Android native (React Native)
+**/ios/build/
+**/ios/Pods/
+**/android/.gradle/
+**/android/app/build/
+
+# Docker
+**/Dockerfile.local
+
+# Terraform state
+*.tfstate*
+.terraform/
+
+# Optional: Supabase local dev artefacts
+.supabase/
+
+# Logs & crash dumps
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# iOS local env and lock files
+apps/mobile/AmcClinicalPrep/ios/.xcode.env.local
+apps/mobile/AmcClinicalPrep/ios/Podfile.lock
+
+# Other common lock files
+**/yarn.lock
+**/pnpm-lock.yaml
+**/package-lock.json
+**/Podfile.lock
+**/.xcode.env.local
+
+# iOS local env and lock files
+apps/mobile/AmcClinicalPrep/ios/.xcode.env.local
+apps/mobile/AmcClinicalPrep/ios/Podfile.lock
+
+# Other common lock files
+**/yarn.lock
+**/pnpm-lock.yaml
+**/package-lock.json
+apps/mobile/AmcClinicalPrep/ios/AmcClinicalPrep.xcworkspace/xcuserdata/gihan.xcuserdatad/UserInterfaceState.xcuserstate
+apps/mobile/AmcClinicalPrep/ios/AmcClinicalPrep.xcworkspace/xcuserdata/chamath.xcuserdatad/UserInterfaceState.xcuserstate
+apps/mobile/AmcClinicalPrep/ios/AmcClinicalPrep.xcworkspace/xcuserdata/nissanka.xcuserdatad/UserInterfaceState.xcuserstate
