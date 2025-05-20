@@ -1,4 +1,3 @@
-import TTS from "react-native-tts";
 import OpenAI from "openai";
 import RNFS from "react-native-fs";
 import { v4 as uuid } from "uuid";
@@ -36,9 +35,6 @@ export class SpeechService {
         const base64 = btoa(binary);
         await RNFS.writeFile(tmp, base64, "base64");
         await this.player.startPlayer(tmp);
-      } else {
-        TTS.setDefaultLanguage(this.language);
-        TTS.speak(text);
       }
     } catch (error) {
       throw new Error(

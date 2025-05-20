@@ -4,7 +4,6 @@ module.exports = {
   dts: true,
   external: [
     'react-native',
-    'react-native-tts',
     'react-native-fs',
     'react-native-audio-recorder-player',
     'react-native-permissions',

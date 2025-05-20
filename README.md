@@ -26,7 +26,6 @@ Installs & autolinks:
 
 * `react-native-audio-recorder-player`
 * `react-native-permissions`
-* `react-native-tts`
 * `openai`
 
 ---
@@ -113,7 +112,6 @@ export default function InterviewScreen() {
 | Problem                              | Fix                                                                    |
 | ------------------------------------ | ---------------------------------------------------------------------- |
 | **Mic permission denied**            | Ensure runtime prompt accepted / `Info.plist` key present.             |
-| iOS “duplicate symbol” linker errors | Make sure **one** copy of each native lib (`npm ls react-native-tts`). |
 | TS errors for `AudioSet` enums       | Upgrade `react-native-audio-recorder-player` ≥ 3.6.                    |
 | OpenAI 401 / network errors          | Check `OPENAI_API_KEY` and connectivity.                               |
 | Latency > 4 s                        | Lower `opts.maxAudioMs`, use Wi-Fi, or prefer device TTS.              |
