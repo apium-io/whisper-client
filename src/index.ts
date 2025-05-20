@@ -57,4 +57,5 @@ class WhisperClient {
   }
 }
 
-export { WhisperClient };
+export { WhisperClient };   // named
+export default WhisperClient;  // default

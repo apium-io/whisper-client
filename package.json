@@ -1,6 +1,6 @@
 {
   "name": "whisper-client",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React-Native voice chat: record → Whisper → ChatGPT → TTS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -8,6 +8,13 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import" : "./dist/index.mjs",
+      "types"  : "./dist/index.d.ts"
+    }
+  },
   "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.ts --dts --format esm,cjs",
